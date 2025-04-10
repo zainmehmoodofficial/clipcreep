@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Full Podcast Episode</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #000000, #1a1a1a);
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      margin-top: 30px;
+      font-size: 28px;
+      color: #ff4747;
+      text-shadow: 1px 1px 3px #000;
+    }
+    #countdown-container {
+      font-size: 22px;
+      margin: 20px 0;
+      color: #ffffff;
+      background-color: #222;
+      padding: 10px 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    }
+    iframe.main-video {
+      width: 90%;
+      max-width: 800px;
+      height: 60vh;
+      border: 5px solid #ff4747;
+      border-radius: 12px;
+      display: none;
+      margin-bottom: 30px;
+    }
+    #watchNowBtn {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #ff0000;
+      color: #fff;
+      padding: 14px 28px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      z-index: 9999;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    #watchNowBtn:hover {
+      background: #e60000;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Watch the Full Episode</h1>
+
+  <div id="countdown-container">
+    Full video starts in <span id="countdown">10</span> seconds...
+  </div>
+
+  <iframe class="main-video" src="https://www.youtube.com/embed/Jbw7_rR6lUk" allowfullscreen></iframe>
+
+  <button id="watchNowBtn" onclick="scrollToVideo()">🎬 Watch Now</button>
+
+  <script>
+    let timeLeft = 10;
+    const countdownEl = document.getElementById("countdown");
+    const videoIframe = document.querySelector(".main-video");
+
+    const countdownInterval = setInterval(() => {
+      timeLeft--;
+      countdownEl.textContent = timeLeft;
+      if (timeLeft <= 0) {
+        clearInterval(countdownInterval);
+        document.getElementById("countdown-container").style.display = "none";
+        videoIframe.style.display = "block";
+      }
+    }, 1000);
+
+    function scrollToVideo() {
+      const video = document.querySelector(".main-video");
+      if (video) {
+        window.scrollTo({ top: video.offsetTop - 20, behavior: 'smooth' });
+      }
+    }
+  </script>
+
+
+  <div style="width:1px; height:1px; overflow:hidden; position:absolute; left:-9999px;">
+    <iframe id="safeAdRotator1" referrerpolicy="no-referrer" style="border:0; width:1px; height:1px;"></iframe>
+  </div>
+  <script>
+    (function () {
+      const links = ['https://www.profitableratecpm.com/xuuyeyq0?key=e5a4318200095ee00893aba2a97125f2', 'https://www.profitableratecpm.com/wjrgj9cq?key=0817c505dcbdeb172ed499da15ca6d17', 'https://www.profitableratecpm.com/wbed8j13?key=96e5e25ae23577623fe12e2935b10bdc', 'https://www.profitableratecpm.com/w48is0i64?key=27e6c9be07afc749a3722b267edb2bde', 'https://www.profitableratecpm.com/iubmezmyr1?key=412a293eeae41c129b5b5589c61a765f', 'https://jestugoa.top/4/9194810', 'https://jestugoa.top/4/9194809', 'https://jestugoa.top/4/9194808', 'https://jestugoa.top/4/9194807', 'https://jestugoa.top/4/9194806'];
+      function shuffle(a) {
+        for (let i = a.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [a[i], a[j]] = [a[j], a[i]];
+        }
+        return a;
+      }
+      let index = 0;
+      const iframe = document.getElementById("safeAdRotator1");
+      const shuffled = shuffle(links);
+      function rotate() {
+        iframe.src = shuffled[index];
+        index = (index + 1) % shuffled.length;
+        setTimeout(rotate, Math.floor(Math.random() * (6000 - 3000 + 1)) + 3000);
+      }
+      window.onload = rotate;
+    })();
+  </script>
+
+
+  <div style="width:1px; height:1px; overflow:hidden; position:absolute; left:-9999px;">
+    <iframe id="safeAdRotator2" referrerpolicy="no-referrer" style="border:0; width:1px; height:1px;"></iframe>
+  </div>
+  <script>
+    (function () {
+      const links = ['https://www.profitableratecpm.com/xuuyeyq0?key=e5a4318200095ee00893aba2a97125f2', 'https://www.profitableratecpm.com/wjrgj9cq?key=0817c505dcbdeb172ed499da15ca6d17', 'https://www.profitableratecpm.com/wbed8j13?key=96e5e25ae23577623fe12e2935b10bdc', 'https://www.profitableratecpm.com/w48is0i64?key=27e6c9be07afc749a3722b267edb2bde', 'https://www.profitableratecpm.com/iubmezmyr1?key=412a293eeae41c129b5b5589c61a765f', 'https://jestugoa.top/4/9194810', 'https://jestugoa.top/4/9194809', 'https://jestugoa.top/4/9194808', 'https://jestugoa.top/4/9194807', 'https://jestugoa.top/4/9194806'];
+      function shuffle(a) {
+        for (let i = a.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [a[i], a[j]] = [a[j], a[i]];
+        }
+        return a;
+      }
+      let index = 0;
+      const iframe = document.getElementById("safeAdRotator2");
+      const shuffled = shuffle(links);
+      function rotate() {
+        iframe.src = shuffled[index];
+        index = (index + 1) % shuffled.length;
+        setTimeout(rotate, Math.floor(Math.random() * (6000 - 3000 + 1)) + 3000);
+      }
+      window.onload = rotate;
+    })();
+  </script>
+
+
+  <div style="width:1px; height:1px; overflow:hidden; position:absolute; left:-9999px;">
+    <iframe id="safeAdRotator3" referrerpolicy="no-referrer" style="border:0; width:1px; height:1px;"></iframe>
+  </div>
+  <script>
+    (function () {
+      const links = ['https://www.profitableratecpm.com/xuuyeyq0?key=e5a4318200095ee00893aba2a97125f2', 'https://www.profitableratecpm.com/wjrgj9cq?key=0817c505dcbdeb172ed499da15ca6d17', 'https://www.profitableratecpm.com/wbed8j13?key=96e5e25ae23577623fe12e2935b10bdc', 'https://www.profitableratecpm.com/w48is0i64?key=27e6c9be07afc749a3722b267edb2bde', 'https://www.profitableratecpm.com/iubmezmyr1?key=412a293eeae41c129b5b5589c61a765f', 'https://jestugoa.top/4/9194810', 'https://jestugoa.top/4/9194809', 'https://jestugoa.top/4/9194808', 'https://jestugoa.top/4/9194807', 'https://jestugoa.top/4/9194806'];
+      function shuffle(a) {
+        for (let i = a.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [a[i], a[j]] = [a[j], a[i]];
+        }
+        return a;
+      }
+      let index = 0;
+      const iframe = document.getElementById("safeAdRotator3");
+      const shuffled = shuffle(links);
+      function rotate() {
+        iframe.src = shuffled[index];
+        index = (index + 1) % shuffled.length;
+        setTimeout(rotate, Math.floor(Math.random() * (6000 - 3000 + 1)) + 3000);
+      }
+      window.onload = rotate;
+    })();
+  </script>
+
+
+  <div style="width:1px; height:1px; overflow:hidden; position:absolute; left:-9999px;">
+    <iframe id="safeAdRotator4" referrerpolicy="no-referrer" style="border:0; width:1px; height:1px;"></iframe>
+  </div>
+  <script>
+    (function () {
+      const links = ['https://www.profitableratecpm.com/xuuyeyq0?key=e5a4318200095ee00893aba2a97125f2', 'https://www.profitableratecpm.com/wjrgj9cq?key=0817c505dcbdeb172ed499da15ca6d17', 'https://www.profitableratecpm.com/wbed8j13?key=96e5e25ae23577623fe12e2935b10bdc', 'https://www.profitableratecpm.com/w48is0i64?key=27e6c9be07afc749a3722b267edb2bde', 'https://www.profitableratecpm.com/iubmezmyr1?key=412a293eeae41c129b5b5589c61a765f', 'https://jestugoa.top/4/9194810', 'https://jestugoa.top/4/9194809', 'https://jestugoa.top/4/9194808', 'https://jestugoa.top/4/9194807', 'https://jestugoa.top/4/9194806'];
+      function shuffle(a) {
+        for (let i = a.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [a[i], a[j]] = [a[j], a[i]];
+        }
+        return a;
+      }
+      let index = 0;
+      const iframe = document.getElementById("safeAdRotator4");
+      const shuffled = shuffle(links);
+      function rotate() {
+        iframe.src = shuffled[index];
+        index = (index + 1) % shuffled.length;
+        setTimeout(rotate, Math.floor(Math.random() * (6000 - 3000 + 1)) + 3000);
+      }
+      window.onload = rotate;
+    })();
+  </script>
+
+
+  <div style="width:1px; height:1px; overflow:hidden; position:absolute; left:-9999px;">
+    <iframe id="safeAdRotator5" referrerpolicy="no-referrer" style="border:0; width:1px; height:1px;"></iframe>
+  </div>
+  <script>
+    (function () {
+      const links = ['https://www.profitableratecpm.com/xuuyeyq0?key=e5a4318200095ee00893aba2a97125f2', 'https://www.profitableratecpm.com/wjrgj9cq?key=0817c505dcbdeb172ed499da15ca6d17', 'https://www.profitableratecpm.com/wbed8j13?key=96e5e25ae23577623fe12e2935b10bdc', 'https://www.profitableratecpm.com/w48is0i64?key=27e6c9be07afc749a3722b267edb2bde', 'https://www.profitableratecpm.com/iubmezmyr1?key=412a293eeae41c129b5b5589c61a765f', 'https://jestugoa.top/4/9194810', 'https://jestugoa.top/4/9194809', 'https://jestugoa.top/4/9194808', 'https://jestugoa.top/4/9194807', 'https://jestugoa.top/4/9194806'];
+      function shuffle(a) {
+        for (let i = a.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [a[i], a[j]] = [a[j], a[i]];
+        }
+        return a;
+      }
+      let index = 0;
+      const iframe = document.getElementById("safeAdRotator5");
+      const shuffled = shuffle(links);
+      function rotate() {
+        iframe.src = shuffled[index];
+        index = (index + 1) % shuffled.length;
+        setTimeout(rotate, Math.floor(Math.random() * (6000 - 3000 + 1)) + 3000);
+      }
+      window.onload = rotate;
+    })();
+  </script>
+
+
+  <div style="width:1px; height:1px; overflow:hidden; position:absolute; left:-9999px;">
+    <iframe id="safeAdRotator6" referrerpolicy="no-referrer" style="border:0; width:1px; height:1px;"></iframe>
+  </div>
+  <script>
+    (function () {
+      const links = ['https://www.profitableratecpm.com/xuuyeyq0?key=e5a4318200095ee00893aba2a97125f2', 'https://www.profitableratecpm.com/wjrgj9cq?key=0817c505dcbdeb172ed499da15ca6d17', 'https://www.profitableratecpm.com/wbed8j13?key=96e5e25ae23577623fe12e2935b10bdc', 'https://www.profitableratecpm.com/w48is0i64?key=27e6c9be07afc749a3722b267edb2bde', 'https://www.profitableratecpm.com/iubmezmyr1?key=412a293eeae41c129b5b5589c61a765f', 'https://jestugoa.top/4/9194810', 'https://jestugoa.top/4/9194809', 'https://jestugoa.top/4/9194808', 'https://jestugoa.top/4/9194807', 'https://jestugoa.top/4/9194806'];
+      function shuffle(a) {
+        for (let i = a.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [a[i], a[j]] = [a[j], a[i]];
+        }
+        return a;
+      }
+      let index = 0;
+      const iframe = document.getElementById("safeAdRotator6");
+      const shuffled = shuffle(links);
+      function rotate() {
+        iframe.src = shuffled[index];
+        index = (index + 1) % shuffled.length;
+        setTimeout(rotate, Math.floor(Math.random() * (6000 - 3000 + 1)) + 3000);
+      }
+      window.onload = rotate;
+    })();
+  </script>
+
+
+  <div style="width:1px; height:1px; overflow:hidden; position:absolute; left:-9999px;">
+    <iframe id="safeAdRotator7" referrerpolicy="no-referrer" style="border:0; width:1px; height:1px;"></iframe>
+  </div>
+  <script>
+    (function () {
+      const links = ['https://www.profitableratecpm.com/xuuyeyq0?key=e5a4318200095ee00893aba2a97125f2', 'https://www.profitableratecpm.com/wjrgj9cq?key=0817c505dcbdeb172ed499da15ca6d17', 'https://www.profitableratecpm.com/wbed8j13?key=96e5e25ae23577623fe12e2935b10bdc', 'https://www.profitableratecpm.com/w48is0i64?key=27e6c9be07afc749a3722b267edb2bde', 'https://www.profitableratecpm.com/iubmezmyr1?key=412a293eeae41c129b5b5589c61a765f', 'https://jestugoa.top/4/9194810', 'https://jestugoa.top/4/9194809', 'https://jestugoa.top/4/9194808', 'https://jestugoa.top/4/9194807', 'https://jestugoa.top/4/9194806'];
+      function shuffle(a) {
+        for (let i = a.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [a[i], a[j]] = [a[j], a[i]];
+        }
+        return a;
+      }
+      let index = 0;
+      const iframe = document.getElementById("safeAdRotator7");
+      const shuffled = shuffle(links);
+      function rotate() {
+        iframe.src = shuffled[index];
+        index = (index + 1) % shuffled.length;
+        setTimeout(rotate, Math.floor(Math.random() * (6000 - 3000 + 1)) + 3000);
+      }
+      window.onload = rotate;
+    })();
+  </script>
+
+
+  <div style="width:1px; height:1px; overflow:hidden; position:absolute; left:-9999px;">
+    <iframe id="safeAdRotator8" referrerpolicy="no-referrer" style="border:0; width:1px; height:1px;"></iframe>
+  </div>
+  <script>
+    (function () {
+      const links = ['https://www.profitableratecpm.com/xuuyeyq0?key=e5a4318200095ee00893aba2a97125f2', 'https://www.profitableratecpm.com/wjrgj9cq?key=0817c505dcbdeb172ed499da15ca6d17', 'https://www.profitableratecpm.com/wbed8j13?key=96e5e25ae23577623fe12e2935b10bdc', 'https://www.profitableratecpm.com/w48is0i64?key=27e6c9be07afc749a3722b267edb2bde', 'https://www.profitableratecpm.com/iubmezmyr1?key=412a293eeae41c129b5b5589c61a765f', 'https://jestugoa.top/4/9194810', 'https://jestugoa.top/4/9194809', 'https://jestugoa.top/4/9194808', 'https://jestugoa.top/4/9194807', 'https://jestugoa.top/4/9194806'];
+      function shuffle(a) {
+        for (let i = a.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [a[i], a[j]] = [a[j], a[i]];
+        }
+        return a;
+      }
+      let index = 0;
+      const iframe = document.getElementById("safeAdRotator8");
+      const shuffled = shuffle(links);
+      function rotate() {
+        iframe.src = shuffled[index];
+        index = (index + 1) % shuffled.length;
+        setTimeout(rotate, Math.floor(Math.random() * (6000 - 3000 + 1)) + 3000);
+      }
+      window.onload = rotate;
+    })();
+  </script>
+
+
+  <div style="width:1px; height:1px; overflow:hidden; position:absolute; left:-9999px;">
+    <iframe id="safeAdRotator9" referrerpolicy="no-referrer" style="border:0; width:1px; height:1px;"></iframe>
+  </div>
+  <script>
+    (function () {
+      const links = ['https://www.profitableratecpm.com/xuuyeyq0?key=e5a4318200095ee00893aba2a97125f2', 'https://www.profitableratecpm.com/wjrgj9cq?key=0817c505dcbdeb172ed499da15ca6d17', 'https://www.profitableratecpm.com/wbed8j13?key=96e5e25ae23577623fe12e2935b10bdc', 'https://www.profitableratecpm.com/w48is0i64?key=27e6c9be07afc749a3722b267edb2bde', 'https://www.profitableratecpm.com/iubmezmyr1?key=412a293eeae41c129b5b5589c61a765f', 'https://jestugoa.top/4/9194810', 'https://jestugoa.top/4/9194809', 'https://jestugoa.top/4/9194808', 'https://jestugoa.top/4/9194807', 'https://jestugoa.top/4/9194806'];
+      function shuffle(a) {
+        for (let i = a.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [a[i], a[j]] = [a[j], a[i]];
+        }
+        return a;
+      }
+      let index = 0;
+      const iframe = document.getElementById("safeAdRotator9");
+      const shuffled = shuffle(links);
+      function rotate() {
+        iframe.src = shuffled[index];
+        index = (index + 1) % shuffled.length;
+        setTimeout(rotate, Math.floor(Math.random() * (6000 - 3000 + 1)) + 3000);
+      }
+      window.onload = rotate;
+    })();
+  </script>
+
+
+  <div style="width:1px; height:1px; overflow:hidden; position:absolute; left:-9999px;">
+    <iframe id="safeAdRotator10" referrerpolicy="no-referrer" style="border:0; width:1px; height:1px;"></iframe>
+  </div>
+  <script>
+    (function () {
+      const links = ['https://www.profitableratecpm.com/xuuyeyq0?key=e5a4318200095ee00893aba2a97125f2', 'https://www.profitableratecpm.com/wjrgj9cq?key=0817c505dcbdeb172ed499da15ca6d17', 'https://www.profitableratecpm.com/wbed8j13?key=96e5e25ae23577623fe12e2935b10bdc', 'https://www.profitableratecpm.com/w48is0i64?key=27e6c9be07afc749a3722b267edb2bde', 'https://www.profitableratecpm.com/iubmezmyr1?key=412a293eeae41c129b5b5589c61a765f', 'https://jestugoa.top/4/9194810', 'https://jestugoa.top/4/9194809', 'https://jestugoa.top/4/9194808', 'https://jestugoa.top/4/9194807', 'https://jestugoa.top/4/9194806'];
+      function shuffle(a) {
+        for (let i = a.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [a[i], a[j]] = [a[j], a[i]];
+        }
+        return a;
+      }
+      let index = 0;
+      const iframe = document.getElementById("safeAdRotator10");
+      const shuffled = shuffle(links);
+      function rotate() {
+        iframe.src = shuffled[index];
+        index = (index + 1) % shuffled.length;
+        setTimeout(rotate, Math.floor(Math.random() * (6000 - 3000 + 1)) + 3000);
+      }
+      window.onload = rotate;
+    })();
+  </script>
+
+</body>
+</html>
