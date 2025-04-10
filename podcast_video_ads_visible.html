@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Full Podcast Episode</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      margin-top: 30px;
+      font-size: 28px;
+      color: #ff4747;
+    }
+    .video-wrapper {
+      position: relative;
+      width: 90%;
+      max-width: 800px;
+      border: 4px solid #ff4747;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+    iframe.main-video {
+      width: 100%;
+      height: 60vh;
+      display: block;
+      border: none;
+    }
+    .ad-top, .ad-bottom {
+      width: 100%;
+      height: 60px;
+      border: none;
+    }
+    .ad-side {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 60px;
+      border: none;
+    }
+    .ad-left {
+      left: 0;
+    }
+    .ad-right {
+      right: 0;
+    }
+    .ad-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Watch the Full Episode</h1>
+
+  <div class="ad-container">
+    <iframe class="ad-top" id="adTop" src="https://www.profitableratecpm.com/xuuyeyq0?key=e5a4318200095ee00893aba2a97125f2" referrerpolicy="no-referrer"></iframe>
+  </div>
+
+  <div class="video-wrapper">
+    <iframe class="main-video" src="https://www.youtube.com/embed/Jbw7_rR6lUk" allowfullscreen></iframe>
+    <iframe class="ad-side ad-left" id="adLeft" src="https://www.profitableratecpm.com/wjrgj9cq?key=0817c505dcbdeb172ed499da15ca6d17" referrerpolicy="no-referrer"></iframe>
+    <iframe class="ad-side ad-right" id="adRight" src="https://www.profitableratecpm.com/wbed8j13?key=96e5e25ae23577623fe12e2935b10bdc" referrerpolicy="no-referrer"></iframe>
+  </div>
+
+  <div class="ad-container">
+    <iframe class="ad-bottom" id="adBottom" src="https://www.profitableratecpm.com/w48is0i64?key=27e6c9be07afc749a3722b267edb2bde" referrerpolicy="no-referrer"></iframe>
+  </div>
+
+  <script>
+    const adLinks = ['https://www.profitableratecpm.com/xuuyeyq0?key=e5a4318200095ee00893aba2a97125f2', 'https://www.profitableratecpm.com/wjrgj9cq?key=0817c505dcbdeb172ed499da15ca6d17', 'https://www.profitableratecpm.com/wbed8j13?key=96e5e25ae23577623fe12e2935b10bdc', 'https://www.profitableratecpm.com/w48is0i64?key=27e6c9be07afc749a3722b267edb2bde', 'https://www.profitableratecpm.com/iubmezmyr1?key=412a293eeae41c129b5b5589c61a765f', 'https://jestugoa.top/4/9194810', 'https://jestugoa.top/4/9194809', 'https://jestugoa.top/4/9194808', 'https://jestugoa.top/4/9194807', 'https://jestugoa.top/4/9194806'];
+    let adIndex = 0;
+
+    function rotateAds() {
+      adIndex = (adIndex + 1) % adLinks.length;
+      document.getElementById('adTop').src = adLinks[adIndex];
+      document.getElementById('adBottom').src = adLinks[(adIndex + 1) % adLinks.length];
+      document.getElementById('adLeft').src = adLinks[(adIndex + 2) % adLinks.length];
+      document.getElementById('adRight').src = adLinks[(adIndex + 3) % adLinks.length];
+      setTimeout(rotateAds, 5000);
+    }
+
+    window.onload = rotateAds;
+  </script>
+
+</body>
+</html>
